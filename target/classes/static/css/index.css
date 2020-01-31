@@ -1,0 +1,266 @@
+
+* {
+	box-sizing: border-box !important;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+	background-color: black;
+}
+
+.bowl_image img{
+  width: 100vw;
+  height: auto;  
+
+}
+
+.contenair1 {
+display:flex;
+  padding-bottom:100px;
+    background: 
+      linear-gradient(.25turn,rgba(0,0,0,0.9), 70%,rgba(0,0,0,0.3)), 
+      url("/image/circusBlack.jpeg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    font-size:20px
+
+}
+.contenair2 {
+display:flex;
+  padding-bottom:100px;
+    background: 
+      linear-gradient(.75turn,rgba(0,0,0,0.9), 70%,rgba(0,0,0,0.3)),  
+      url("/image/circusMiddle.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    font-size:20px
+
+}
+.contenair3 {
+display:flex;
+  padding-bottom:100px;
+    background: 
+linear-gradient(.25turn,rgba(0,0,0,0.9), 70%,rgba(0,0,0,0.3)), 
+      url("/image/circuswhite.jpeg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    font-size:20px
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+a {
+	text-decoration: none !important;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	color: red !important;
+	font-family: 
+}
+
+.main-nav a {
+	color: #f3f3f3 !important;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa !important;
+}
+
+
+
+.header {
+	z-index: 1000;
+	width: 100%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #a2a2a2 !important;
+	background-color: black;
+
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 300px) {
+	.header,
+	.main-nav {
+		display: flex !important;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80% !important;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
+
+}
+									/*CONTENT*/
+
+.contenair {
+	display: flex;
+	flex-direction: row;
+}
+.contenair2 {
+	display: flex;
+	flex-direction: row;
+}
+.contenair3 {
+	display: flex;
+	flex-direction: row;
+}
+.left {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.right {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.contenair1 p {
+	padding-left: 10px;
+	color: #f4f4f4;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px black;
+	text-align: center;
+}
+.contenair2 p {
+	padding-left: 10px;
+	color: #f4f4f4;
+	font-size: 1.5rem;
+		text-shadow: 2px 2px black;
+		text-align: center;
+}
+.contenair3 p {
+	padding-left: 10px;
+	color: #f4f4f4;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px black;
+		text-align: center;
+}
+
+.contenair1 img {
+	width: 70%;
+	height: auto;
+	max-height: 500px;
+border:5px solid red;
+border-radius: 10px;
+}
+.contenair2 img {
+	width: 70%;
+	height: auto;
+	max-height: 500px;
+border:5px solid red;
+border-radius: 10px;
+}
+.contenair3 img {
+	width: 70%;
+	height: auto;
+	max-height: 500px;
+border:5px solid red;
+border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+	.contenair1 {
+	display: flex;
+	flex-direction: column;
+}
+	.contenair2 {
+	display: flex;
+	flex-direction: column;
+}
+	.contenair3 {
+	display: flex;
+	flex-direction: column;
+}
+	.left {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.right {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+
+.contenair1 img {
+	width: 100vw;
+	height: auto;
+	max-height: 500px;
+}
+.contenair2 img {
+	width: 100vw;
+	height: auto;
+	max-height: 500px;
+}
+.contenair3 img {
+	width: 100vw;
+	height: auto;
+	max-height: 500px;
+}
+}
+
+
+                                                /*FOOTER*/
+footer {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: #f4f4f4;
+    	font-size: 1.45em;
+}
+

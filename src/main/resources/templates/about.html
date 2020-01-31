@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{css/index.css}" />
+  <link rel="stylesheet" th:href="@{css/about.css}" />
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Wild Circus</title>
+
+
+</head>
+<body>
+<header th:replace="layout.html :: top"></header>
+
+
+  <section class="aboutus">
+
+    <div class="divText_a_propos_de_nous">
+      <h1 class="centerTitle_a_propos_de_nous">About us</h1>
+
+
+      <p class="textcenter">
+        Caroline et Nicolas vous accueillent toute l’année autour d’une
+        cuisine maison, authentique et généreuse. Des plats inspirés des
+        îles, mais pas que...<br> Bistrot de quartier au déjeuner,
+        venez déguster notre cuisine entièrement maison avec notre formule
+        du jour.<br> L’été, le soir, nous vous proposons de vous réunir
+        autour de délicieux cocktails et de planches variées à partager.
+        Puis vous pourrez vous laisser tenter par notre carte.
+      </p>
+    </div>
+
+    <div class="container_aboutus">
+      <div class="box_aboutus">
+        <img th:src="@{${indexImage2}}"> <span></span>
+      </div>
+      <div class="box_aboutus">
+        <img th:src="@{${indexImage3}}"> <span></span>
+      </div>
+      <div class="box_aboutus">
+        <img th:src="@{${indexImage4}}"> <span></span>
+      </div>
+      <div class="box_aboutus">
+        <img th:src="@{${indexImage5}}"> <span></span>
+      </div>
+    </div>
+  </section>
+
+<h1 class="centerTitle_a_propos_de_nous">Our Wilders</h1>
+
+<section class="cardSection">
+                    <div th:each="card:${cards}" class="">
+
+                      <div class="card" style="width: 17rem;">
+                        <img th:src="@{${card.photo}}" class="card-img-top" src="https://images.unsplash.com/photo-1489015712802-f490a7a1061d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Card image cap">
+                        <h5 th:text="${card.name}" class="secondTitre">titre</h5>
+                        <p class="para" th:text="${card.description}"></p>
+                        <div class="card-body">
+                        </div>
+                      </div>
+
+                    </div>
+</section>
+
+
+
+
+
+
+	<footer class="footer" th:replace="layout.html :: bottom"></footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,161 @@
+body {
+	    	background-image: url("/image/backblack.jpg");
+	    	
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+h3 {
+	color: red !important;
+}
+             /*mise en en forme du tableau*/
+table {
+  margin:auto;
+  color:black;
+  border-collapse: collapse;
+  border: 5px solid red;
+}
+
+td {        
+  padding: 10px;
+  vertical-align:middle;
+  text-align: center;
+  border: 1px solid black;
+}
+tbody tr td a {
+	color: black !important;
+}
+th {        
+  padding: 10px;
+  vertical-align:middle;
+  text-align: center;
+  border: 1px solid black;
+}
+
+thead {
+  height:70px;
+  background-color:grey;
+}
+
+tbody {
+  height:120px;
+  background-color:white;
+}
+
+.case {
+  background-color:grey;
+}
+
+.pricesTitle {
+margin-top: 20px;
+margin-left: 20px;	
+}
+
+.pricesTitle a {	
+color: whitesmoke !important;
+}
+
+iframe 	{
+display: flex;
+justify-content: center;
+align-items: center;
+
+  box-shadow: 0 0 5px rgba(149,165,166 ,0.7);
+  border: 5px solid red;
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 5px solid red !important;
+}
+
+
+.contenair10 {
+display:flex;
+    font-size:20px;
+    	flex-direction: row;
+}
+
+.contenair10 p {
+	padding-left: 10px;
+	color: whitesmoke;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+.contenair20 {
+display:flex;
+    font-size:20px;
+    	flex-direction: row;
+}
+
+.contenair20 p {
+	padding-left: 10px;
+	color: whitesmoke;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.left2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.right2 {
+	width: 50%;
+	display: flex;
+		flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+@media (max-width: 1225px) {
+	.contenair10 {
+	display: flex;
+	flex-direction: column;
+}
+
+	.contenair20 {
+	display: flex;
+	flex-direction: column;
+}
+	.left2 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.right2 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+
+}
+.contenair10 p {
+width: 90%;
+
+}
+
+.contenair20 p {
+width: 90%;
+
+}
+
+
+iframe {
+	width: 90%;
+}
+
+table {
+	width: 90%;
+}

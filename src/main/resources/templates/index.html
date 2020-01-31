@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{css/index.css}" />
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Wild Circus</title>
+
+
+</head>
+<body>
+<header th:replace="layout.html :: top"></header>
+
+
+   <div class="bowl_image">
+
+    <img th:src="@{${perf1}}" alt="">
+
+  </div>
+
+
+
+																<!-- Content Page -->
+
+
+
+<div class="contenair1">
+<div class="left"><p th:text="${desc2}">As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p></div>
+<div class="right"><img th:src="@{${perf2}}"></div>
+</div>
+
+
+
+    <div class="contenair2">
+<div class="left"><img th:src="@{${perf3}}"></div>
+<div class="right"><p th:text="${desc3}">Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p></div>
+</div>
+
+
+
+<div class="contenair3">
+<div class="left"><p th:text="${desc4}">Tame the untameable in the company of our tamers,<br> between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p></div>
+<div class="right"><img th:src="@{${perf4}}"></div>
+</div>
+
+
+	<footer class="footer" th:replace="layout.html :: bottom"></footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+</html>

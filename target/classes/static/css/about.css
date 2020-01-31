@@ -1,0 +1,220 @@
+/* -------------------------------------------Abut us-------------------------------------------*/
+body {
+	    background-image: url("/image/red.jpg");  
+    	background-repeat:no-repeat;
+	background-size: cover;
+}
+.container_aboutus {
+	 display: flex;
+	 width: 50%;
+	 padding: 4% 2%;
+	 box-sizing: border-box;
+	 height: 500px;
+}
+ .box_aboutus {
+	 flex: 1;
+	 overflow: hidden;
+	 transition: 0.5s;
+	 margin: 0 2%;
+	 box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+	 line-height: 0;
+   	 border: 5px solid black;
+}
+ .box_aboutus > img {
+	 width: 200%;
+	 height: calc(100% - 10vh);
+	 object-fit: cover;
+	 transition: 0.5s;
+	 border-bottom: 3px solid black;
+
+}
+ .box_aboutus > span {
+	 font-size: 3vh;
+	 display: block;
+	 text-align: center;
+	 height: 10vh;
+	 line-height: 3;
+   background: white;
+}
+ .box_aboutus:hover {
+	 flex: 1 1 50%;
+}
+ .box_aboutus:hover > img {
+	 width: 100%;
+	 height: 100%;
+}
+
+.aboutus {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.centerTitle_a_propos_de_nous {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.divText_a_propos_de_nous {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+}
+
+.textcenter{
+	font-size: 1.5em;
+
+}
+
+
+@media screen  and (max-width:800px){
+  .container_aboutus {
+  	 width: 100%;
+  	 padding: 4% 2%;
+  	 height: auto;
+  	 margin-bottom: 50px;
+  	 
+  }
+
+  .aboutus {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px!important;
+  }
+
+  .divText_a_propos_de_nous {
+      width: 450px;
+      margin-bottom: 30px;
+  }
+  
+  .centerTitle_a_propos_de_nous {
+    margin-top: 50px;
+}
+
+}
+
+@media screen  and (max-width:450px){
+  .divText_a_propos_de_nous {
+      width: 300px;
+  }
+  
+}
+
+
+
+
+
+
+.album {
+	margin-top: 100px;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;	
+}
+
+.secondTitre {
+	text-align: center;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+
+
+@media (max-width: 800px) {
+
+	
+	.album {
+	margin-top: 50px;	
+	}
+	
+
+}
+
+
+.cardSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+	margin-top: 40px;
+}
+
+.h3-responsive{
+	font-weight: bold;
+}
+
+
+.card{
+	
+	box-shadow: 1px 1px 12px #555;
+	margin-bottom: 80px;
+	min-height: 250px;
+	max-height: 600px;
+	margin-left: 100px;
+	margin-right: 100px;	
+	border: 5px solid black !important;
+}
+
+.card-img-top{
+	min-height: 210px;
+	max-height: 210px;
+	padding: 5px;
+}
+
+.card-body{
+	min-height: 130px;
+	max-height: 130px;
+}
+
+.card-body h5{
+	color: #007380!important;
+	font-weight: 500;
+}
+.para {
+	text-align: center;
+}
+.card-body{
+	text-align: center!important
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 1010px) {
+	.card{	
+	margin-left: 30px;
+	margin-right: 30px;	
+	}
+}
+
+
+@media (max-width: 800px) {
+	
+	
+	.card{
+	margin-bottom: 50px;
+	}
+}
+
+
+@media screen and (max-width: 380px) {
+  .card {
+    width: 17rem!important;
+        
+  }
+  
+  .card-img-top{
+	min-height: 190px;
+	max-height: 190px;
+}
+}
+

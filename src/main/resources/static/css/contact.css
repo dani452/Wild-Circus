@@ -1,0 +1,139 @@
+/*----------------------------------Contact Us---------------------------------------*/
+body{
+	background:url("/image/redblack.jpg") no-repeat center;
+	background-size: cover;
+
+}
+.errorValidation {
+	color: #e10909;
+}
+
+.contact_us{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 100px;
+}
+.contact_us h1 {
+	margin-top: 120px;
+	margin-bottom: 30px;
+	color:#eceee3;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.contact_section {
+	float: right;
+	width: 550px;
+	background-color: rgba(0, 15, 15, 0.6);
+	color: #ddd;
+  border-radius: 20px;
+	border: solid #006064 1px;
+
+}
+
+.contact_form {
+	margin-top: 30px;
+	height: 680px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+
+.contact_input{
+	width: 400px;
+	padding: 10px 20px;
+	margin: 10px 20px;
+	color: white;
+  font-weight:400;
+  font-size: 1.4em;
+  border: none;
+  border-bottom: 1.5px solid white;
+  background-color: transparent;
+}
+
+
+.select_events {
+  margin-top: 30px;
+  width: 280px;
+  height: 40px;
+	color: #263238;
+  }
+
+.contact_textarea {
+  font-size: 0.9em;
+	height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  border: solid 1px white;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.contact_btn {
+	margin-top:35px;
+	color: #fff;
+	background: #009688;
+	padding: 8px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+	border: solid #EEEEEE 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.contact_btn:hover {
+	background: #311B92
+}
+
+.errorValidation {
+	color: #e10909;
+}
+
+@media screen  and (max-width:600px){
+
+  .contact_us h1 {
+    margin-top: 150px;
+    margin-bottom: 30px;    
+	color:#eceee3;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+  }
+
+  .contact_section {
+  	float: right;
+  	width: 340px;
+  }
+
+
+  .contact_form {
+  	margin-top: 20px;
+  	height: 550px;
+  }
+
+  .contact_input{
+  	width: 225px;
+  	padding: 10px 20px;
+  	margin: 10px 20px;
+  	color: white;
+    font-weight:500;
+    font-size: 1em;
+    opacity: 1;
+  }
+
+.contact_textarea {
+    font-size: 0.9em;
+  	height: 100px;
+    width: 260px;
+    margin-top: 30px;
+  }
+  .contact_btn {
+  	margin-top: 20px;
+  }
+  
+}

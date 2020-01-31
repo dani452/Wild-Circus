@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+<body>
+  <header th:fragment="top">
+<div class="header">
+		<h1 class="logo"><a th:href="@{/}">Wild circus</a></h1>
+      <ul class="main-nav">
+          <li><a th:href="@{/}">Home</a></li>
+          <li><a th:href="@{/about}">About</a></li>
+          <li><a th:href="@{/price}">Prices</a></li>
+          <li><a th:href="@{/contact}">Contact</a></li>
+      </ul>
+      </div>
+	</header> 
+	
+<footer class="footer" id="footer" th:fragment="bottom">
+<p>Copyright 2020 - Daniel DA SILVA</p>
+
+</footer>
+</body>
+</html>

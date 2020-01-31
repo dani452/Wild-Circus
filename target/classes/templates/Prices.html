@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/index.css}" />
+  <link rel="stylesheet" th:href="@{/css/prices.css}" />
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Wild Circus</title>
+
+<style>
+#map {
+height: 500px;
+width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+<header th:replace="layout.html :: top"></header>
+
+
+
+    
+    <div class="contenair10">
+<div class="left2">      <h3 class="title">Localisation</h3>  <p>You can find us at all around the world. But if you wan't to find us the most near your place, you can look up to the Map. We are sure that you can find a good location.</p>
+
+          </div>
+<div class="right2">      
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d83993.82523296235!2d2.2916458247033358!3d48.86188985537016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scirque%20paris!5e0!3m2!1sfr!2sfr!4v1580384985554!5m2!1sfr!2sfr" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+</div>
+    
+<div class="contenair20">
+<div class="left2">        
+<table>
+          <thead>
+            <tr>
+                <th></th>
+                <th>Adults</th>
+                <th>Children <br> (< 12 years)</th>
+                <th>Groups <br> (> 10 people)</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr th:each="price : ${prices}">
+                <td class="case" th:text="${price.day}">Weeks off Wednesday</td>
+                <td th:text="${price.adults}">10$</td>
+                <td th:text="${price.children}">6$</td>
+                <td th:text="${price.groups}">60$</td>
+            </tr>
+          </tbody>
+          </table>
+          </div>
+<div class="right2">     <h3 class="title">Prices</h3> 
+<p>You can see the prices for the great show that we prepared for you! Come with many friends or with your family. We are waiting for you!</p>
+          </div>
+</div>
+    
+    
+    
+	<footer class="footer" th:replace="layout.html :: bottom"></footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+<!-- AIzaSyDX74uPX4yOKwVAKphs6ducxR39Q36U1jY -->
+
+    </body>
+</html>
