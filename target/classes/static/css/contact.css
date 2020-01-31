@@ -7,7 +7,9 @@ body{
 .errorValidation {
 	color: #e10909;
 }
-
+.Title {
+	font-family: 'Amatic SC', cursive;
+}
 .contact_us{
 
 	display: flex;

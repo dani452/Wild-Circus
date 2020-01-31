@@ -4,7 +4,9 @@ body {
   padding: 0;
   background-color: #f2f6e9 !important;
 }
-
+.Title {
+	font-family: 'Amatic SC', cursive;
+}
 
 #login {
   margin-top: 50px;

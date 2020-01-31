@@ -11,7 +11,9 @@ body {
 	background-repeat:no-repeat;
 	background-size: cover;
 }
-
+.Title {
+	font-family: 'Amatic SC', cursive;
+}
 .title {
 	text-align:center;
 	color: whitesmoke;

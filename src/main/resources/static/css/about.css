@@ -11,6 +11,9 @@ body {
 	 box-sizing: border-box;
 	 height: 500px;
 }
+.Title {
+	font-family: 'Amatic SC', cursive;
+}
  .box_aboutus {
 	 flex: 1;
 	 overflow: hidden;

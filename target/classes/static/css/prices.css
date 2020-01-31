@@ -4,7 +4,14 @@ body {
 	background-repeat:no-repeat;
 	background-size: cover;
 }
-
+.title {
+	font-size: 3em;
+font-weight: bold;
+}
+.Title {
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+}
 h3 {
 	color: red !important;
 }
@@ -14,6 +21,7 @@ table {
   color:black;
   border-collapse: collapse;
   border: 5px solid red;
+  margin-top: 40px;
 }
 
 td {        

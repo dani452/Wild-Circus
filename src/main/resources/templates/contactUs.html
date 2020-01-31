@@ -9,7 +9,7 @@
   <link rel="stylesheet" th:href="@{css/index.css}" />
   <link rel="stylesheet" th:href="@{css/contact.css}" />
  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic%20SC">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
   <title>Wild Circus</title>
@@ -24,26 +24,26 @@
 
 
 	<div class="contact_us">
-		<h1>Contact Us</h1>
+		<h1 class="Title">Contact Us</h1>
 		<div class="contact_section">
 
 			<form class="contact_form" th:action="@{/sendSimpleEmail}"
 				method="post" th:object="${contact}">
 
 				<input type="text" class="contact_input" th:field="*{lastname}"
-					placeholder="Nom" required name="lastname">
+					placeholder="Lastname" required name="lastname">
 				<p class="errorValidation" th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}"></p>
 				
 				<input type="text" th:field="*{firstname}" class="contact_input"
-					placeholder="Prénom" required name="firstname">
+					placeholder="Firstname" required name="firstname">
 				<p class="errorValidation" th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}"></p>
 				
 				<input type="text" class="contact_input" th:field="*{phone}"
-					placeholder="Numéro tel" required name="phone">
+					placeholder="Phone" required name="phone">
 				<p class="errorValidation" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></p>
 				
 				<input type="text" th:field="*{mail}" class="contact_input"
-					placeholder="Votre e-mail"  name="mail">
+					placeholder="email"  name="mail">
 				<p class="errorValidation" th:if="${#fields.hasErrors('mail')}" th:errors="*{mail}"></p>
 				
 				<select th:field="*{evenement}" name="evenement"
@@ -60,7 +60,7 @@
 				<p class="errorValidation" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></p>
 				
 				<input type="submit" data-toggle="modal" th:unless="${#fields.hasErrors('mail')}" 
-					data-target="#centralModalSm" class="contact_btn" value="Envoyer">
+					data-target="#centralModalSm" class="contact_btn" value="Send">
 
 			</form>
 		</div>
